@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="pstyle.css">
+  <link rel="stylesheet" href="market_demand.css">
+
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+            <img src="logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="dashboard.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+           </a>
+           <a href="./market_demand.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Demand</h3>
+           </a>
+           <a href="./customer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Consumer Feedback</h3>
+              <span class="msg_count">14</span>
+           </a>
+           <a href="./sales2.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Sales</h3>
+           </a>
+           <a href="./supply_status.html">
+              <span class="material-symbols-sharp">report_gmailerrorred</span>
+              <h3>Supply Status</h3>
+           </a>
+           <a href="./inventory.html">
+              <span class="material-symbols-sharp">inventory</span>
+              <h3>Inventory</h3>
+           </a>
+
+           <a href="./settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+           </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <!-- Overview Section -->
+        <section class="overview">
+          <h1>Market Demand Overview</h1>
+          <p class="description">Track and analyze the market demand trends in the agricultural supply chain. Understand how market fluctuations and forecasts impact pricing and supply.</p>
+        </section>
+      
+        <!-- Insights Section -->
+        <section class="insights">
+          <div class="insight-card income">
+            <div class="icon-container">
+              <span class="icon">↑</span>
+            </div>
+            <h3>Market Growth</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 80%"></div>
+            </div>
+            <p class="text-muted">Market growth rate for produce demand</p>
+          </div>
+          <div class="insight-card expenses">
+            <div class="icon-container">
+              <span class="icon">💰</span>
+            </div>
+            <h3>Supply Chain Costs</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 55%"></div>
+            </div>
+            <p class="text-muted">Cost trends in the supply chain for the last quarter</p>
+          </div>
+          <div class="insight-card sales">
+            <div class="icon-container">
+              <span class="icon">📊</span>
+            </div>
+            <h3>Sales Performance</h3>
+            <div class="progress-bar-container">
+              <div class="progress-bar" style="width: 65%"></div>
+            </div>
+            <p class="text-muted">Sales performance in the agricultural market</p>
+          </div>
+        </section>
+      
+        <!-- Market Updates Section -->
+        <section class="recent-market-updates">
+          <h2>Recent Market Updates</h2>
+          <table class="market-table">
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Price Change</th>
+                <th>Demand</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Rice</td>
+                <td class="price-change positive">+12%</td>
+                <td class="demand high">High</td>
+              </tr>
+              <tr>
+                <td>Corn</td>
+                <td class="price-change negative">-5%</td>
+                <td class="demand low">Low</td>
+              </tr>
+              <tr>
+                <td>Wheat</td>
+                <td class="price-change neutral">+0%</td>
+                <td class="demand medium">Medium</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+      
+      
+                 <!-- Right Sidebar -->
+      <div class="right">
+        <div class="top">
+            <button id="menu_bar">
+                <span class="material-symbols-sharp">menu</span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-symbols-sharp active">light_mode</span>
+                <span class="material-symbols-sharp">dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p><b>Amanta</b></p>
+                    <p>Producer</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="producer_logo.jpeg" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
