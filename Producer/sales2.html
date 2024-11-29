@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Dashboard</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="pstyle.css">
+
+  <link rel="stylesheet" href="sales2.css">
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+            <img src="logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="dashboard.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+           </a>
+           <a href="./market_demand.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Demand</h3>
+           </a>
+           <a href="./customer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Consumer Feedback</h3>
+              <span class="msg_count">14</span>
+           </a>
+           <a href="./sales2.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Sales</h3>
+           </a>
+           <a href="./supply_status.html">
+              <span class="material-symbols-sharp">report_gmailerrorred</span>
+              <h3>Supply Status</h3>
+           </a>
+           <a href="./inventory.html">
+              <span class="material-symbols-sharp">inventory</span>
+              <h3>Inventory</h3>
+           </a>
+
+           <a href="./settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+           </a>
+        </div>
+      </aside>
+
+      <!-- Main Content -->
+      <main>
+        <h1>Sales Overview</h1>
+        <div class="date">
+          <span>Today: <b>November 27, 2024</b></span>
+        </div>
+      
+        <!-- Sales Insights -->
+        <div class="insights">
+          <div class="sales">
+            <span class="material-symbols-sharp">trending_up</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Total Sales</h3>
+                <h1>৳12,500</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="30" cy="30" r="30"></circle>
+                </svg>
+                <div class="number">
+                  <p>75%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Compared to last week</small>
+          </div>
+      
+          <div class="income">
+            <span class="material-symbols-sharp">attach_money</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Revenue</h3>
+                <h1>৳8,000</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="30" cy="30" r="30"></circle>
+                </svg>
+                <div class="number">
+                  <p>60%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Compared to last month</small>
+          </div>
+      
+          <div class="expenses">
+            <span class="material-symbols-sharp">trending_down</span>
+            <div class="middle">
+              <div class="left">
+                <h3>Expenses</h3>
+                <h1>৳4,500</h1>
+              </div>
+              <div class="progress">
+                <svg>
+                  <circle cx="30" cy="30" r="30"></circle>
+                </svg>
+                <div class="number">
+                  <p>30%</p>
+                </div>
+              </div>
+            </div>
+            <small class="text-muted">Compared to last week</small>
+          </div>
+        </div>
+      
+        <!-- Recent Sales -->
+        <div class="recent_order">
+          <h2>Recent Sales</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Price (৳)</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nov 26, 2024</td>
+                <td>Tomatoes</td>
+                <td>100 kg</td>
+                <td>৳5,000</td>
+                <td class="success">Completed</td>
+              </tr>
+              <tr>
+                <td>Nov 25, 2024</td>
+                <td>Potatoes</td>
+                <td>150 kg</td>
+                <td>৳7,500</td>
+                <td class="danger">Pending</td>
+              </tr>
+              <tr>
+                <td>Nov 24, 2024</td>
+                <td>Onions</td>
+                <td>80 kg</td>
+                <td>৳4,800</td>
+                <td class="success">Completed</td>
+              </tr>
+            </tbody>
+          </table>
+          <a href="#">Show All</a>
+        </div>
+      
+        <!-- Add New Sale -->
+        <div class="add_product">
+          <h2>Add New Sale</h2>
+          <form>
+            <div>
+              <input type="text" placeholder="Product Name" required />
+            </div>
+            <div>
+              <input type="number" placeholder="Quantity (kg)" required />
+            </div>
+            <div>
+              <input type="number" placeholder="Price (৳)" required />
+            </div>
+            <button type="submit">Add Sale</button>
+          </form>
+        </div>
+      </main>
+      
+    
+    
+                 <!-- Right Sidebar -->
+      <div class="right">
+        <div class="top">
+            <button id="menu_bar">
+                <span class="material-symbols-sharp">menu</span>
+            </button>
+            <div class="theme-toggler">
+                <span class="material-symbols-sharp active">light_mode</span>
+                <span class="material-symbols-sharp">dark_mode</span>
+            </div>
+            <div class="profile">
+                <div class="info">
+                    <p><b>Amanta</b></p>
+                    <p>Producer</p>
+                </div>
+                <div class="profile-photo">
+                    <img src="producer_logo.jpeg" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+
+      </div>
+    </div>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,244 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  h1, h2, h3 {
+    color: #2a3d66;
+    margin-bottom: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  p {
+    color: #7a8b9d;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  /* Main Section */
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  
+  /* Overview Section */
+  .overview {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .insights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .insight {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .insight:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .insight .material-symbols-sharp {
+    font-size: 3rem;
+    color: #4caf50;
+    margin-right: 20px;
+  }
+  
+  .insight .middle {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .insight h1 {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  
+  .insight p {
+    font-size: 1.2rem;
+  }
+  
+  /* Recent Orders Section */
+  .recent_orders {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recent_orders table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .recent_orders th, .recent_orders td {
+    padding: 15px;
+    text-align: left;
+  }
+  
+  .recent_orders th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+  
+  .recent_orders td {
+    background-color: #ffffff;
+  }
+  
+  .recent_orders tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .success {
+    color: #4caf50;
+  }
+  
+  .danger {
+    color: #f44336;
+  }
+  
+  /* Analytics Section */
+  .analytics {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .analytics-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 48%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .analytics-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analytics-item .item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .analytics-item .item .icon {
+    font-size: 2.5rem;
+    margin-right: 20px;
+  }
+  
+  .analytics-item .right h3 {
+    font-size: 1.6rem;
+    margin: 0;
+    color: #2a3d66;
+  }
+  
+  .analytics-item .right p {
+    font-size: 1.2rem;
+    color: #7a8b9d;
+  }
+  
+  /* Crop Health Monitoring Section */
+  .crop_health {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .health-status {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .status-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 150px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .status-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .status-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  
+  .status-card p {
+    font-size: 1.2rem;
+    color: #7a8b9d;
+  }
+  
+  .status-card .material-symbols-sharp {
+    font-size: 2rem;
+    color: #4caf50;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .insights {
+      grid-template-columns: 1fr;
+    }
+  
+    .analytics {
+      flex-direction: column;
+    }
+  
+    .analytics-item {
+      width: 100%;
+    }
+  
+    .crop_health {
+      flex-direction: column;
+    }
+  
+    .health-status {
+      flex-direction: column;
+    }
+  
+    .status-card {
+      width: 100%;
+    }
+  }
+  
