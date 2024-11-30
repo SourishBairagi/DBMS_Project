@@ -1,87 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GreenFields - Agricultural Solutions</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
-    <style>
-        /* Quick CSS for styling */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        body { background: #f5f5f5; color: #333; }
-        header { background: #228B22; color: #fff; padding: 1em; text-align: center; }
-        header h1 { font-size: 2.5em; margin-bottom: 0.2em; }
-        header p { font-size: 1.2em; }
-        nav ul { list-style: none; display: flex; justify-content: center; gap: 2em; }
-        nav ul li a { color: #fff; text-decoration: none; font-weight: bold; }
-        .hero { background: url('farm.jpg') no-repeat center/cover; height: 400px; display: flex; align-items: center; justify-content: center; color: #fff; text-align: center; }
-        .hero h2 { font-size: 2.5em; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); }
-        .container { padding: 2em; text-align: center; }
-        .services, .about, .contact { margin-bottom: 2em; }
-        .services h3, .about h3, .contact h3 { font-size: 2em; color: #228B22; margin-bottom: 0.5em; }
-        .service-list { display: flex; gap: 1em; justify-content: center; }
-        .service-item { background: #fff; padding: 1em; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 200px; }
-        .footer { background: #228B22; color: #fff; padding: 1em; text-align: center; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Retailer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <h1>GreenFields</h1>
-        <p>Your Partner in Sustainable Agriculture</p>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <h2>Welcome to GreenFields</h2>
-        <p>Growing a Sustainable Future Together</p>
-    </section>
-
-    <!-- Services Section -->
-    <section class="container services" id="services">
-        <h3>Our Services</h3>
-        <div class="service-list">
-            <div class="service-item">
-                <h4>Soil Testing</h4>
-                <p>Get accurate soil analysis for better crop yields.</p>
-            </div>
-            <div class="service-item">
-                <h4>Crop Consulting</h4>
-                <p>Expert advice on crop management and growth.</p>
-            </div>
-            <div class="service-item">
-                <h4>Irrigation Systems</h4>
-                <p>Advanced irrigation solutions for water efficiency.</p>
-            </div>
+  <div class="container">
+    <aside>
+      <div class="sidebar">
+        <a href="total_sales.html">Total Sales</a>
+        <a href="warehouse_inventory.html">Warehouse Inventory</a>
+        <a href="recent_sales.html">Recent Sales</a>
+        <a href="add_products.html">Add Products</a>
+        <a href="receipts.html">Receipts</a>
+        <a href="consumer_feedback.html">Consumer Feedback</a>
+      </div>
+    </aside>
+    <main>
+      <h1>Dashboard</h1>
+      <div class="dashboard-charts">
+        <div class="chart-container">
+          <h2>Sales by Product</h2>
+          <canvas id="productSalesChart"></canvas>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="container about" id="about">
-        <h3>About Us</h3>
-        <p>GreenFields is dedicated to providing innovative and sustainable agricultural solutions. Our team of experts helps farmers enhance productivity while promoting environmental stewardship. Join us in creating a greener future!</p>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="container contact" id="contact">
-        <h3>Contact Us</h3>
-        <p>For inquiries, reach us at:</p>
-        <p>Email: contact@greenfields.com</p>
-        <p>Phone: +123-456-7890</p>
-        <p>Address: 123 Green Avenue, Farmville</p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <p>&copy; 2024 GreenFields. All rights reserved.</p>
-    </footer>
+        <div class="chart-container">
+          <h2>Monthly Sales Trend</h2>
+          <canvas id="monthlySalesChart"></canvas>
+        </div>
+        <div class="chart-container">
+          <h2>Stock Levels</h2>
+          <canvas id="stockChart"></canvas>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

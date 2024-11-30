@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside>
+      <div class="sidebar">
+        <a href="index.html">Dashboard</a>
+        <a href="total_sales.html">Total Sales</a>
+        <a href="warehouse_inventory.html">Warehouse Inventory</a>
+        <a href="recent_sales.html">Recent Sales</a>
+        <a href="receipts.html">Receipts</a>
+        <a href="consumer_feedback.html">Consumer Feedback</a>
+      </div>
+    </aside>
+    <main>
+      <h1>Manage Products</h1>
+      <form class="product-form">
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" placeholder="Enter product name">
+        
+        <label for="product-code">Product Code:</label>
+        <input type="text" id="product-code" placeholder="Enter product code">
+        
+        <label for="product-qty">Quantity:</label>
+        <input type="number" id="product-qty" placeholder="Enter quantity">
+        
+        <button type="button" onclick="addProduct()">Add Product</button>
+      </form>
+      <h2>Existing Products</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Product Name</th>
+            <th>Product Code</th>
+            <th>Quantity</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="product-table">
+          <tr>
+            <td>Product A</td>
+            <td>001</td>
+            <td>120</td>
+            <td>
+              <button onclick="editProduct(this)">Edit</button>
+              <button onclick="updateProduct(this)">Update</button>
+              <button onclick="deleteProduct(this)">Delete</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Product B</td>
+            <td>002</td>
+            <td>50</td>
+            <td>
+              <button onclick="editProduct(this)">Edit</button>
+              <button onclick="updateProduct(this)">Update</button>
+              <button onclick="deleteProduct(this)">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
