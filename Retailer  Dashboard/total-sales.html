@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <aside>
+      
+         <div class="top">
+           <div class="logo">
+            <img src="./Image/logo.png" >
+
+            
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">
+              close
+              </span>
+           </div>
+         </div>
+         <!-- end top -->
+         <div class="sidebar">
+            <a href="products.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Products Quantity</h3>
+           </a>
+           <a href="sales.html">
+              <span class="material-symbols-sharp">person_outline</span>
+              <h3>Recent Sales</h3>
+           </a>
+           <a href="add-products.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Add Products</h3>
+           </a>
+           <a href="receipt.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Receipt</h3>
+           </a>
+           <a href="total-sales.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Total Sales</h3>
+           </a>
+           <a href="feedback.html">
+              <span class="material-symbols-sharp">report_gmailerrorred</span>
+              <h3>Consumer Feedback</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+           </a>
+         </div>
+
+      </aside>
+
+      <main>
+        <h1>Total Sales</h1>
+    
+      <!-- Total Sale Section -->
+      <section class="total-sales">
+        <h2>Total Sales</h2>
+        <div class="table-container">
+          <table class="product-table">
+            <thead>
+              <tr>
+                <th>Product Name</th>
+                <th>Total Quantity Sold (kg)</th>
+                <th>Total Revenue ($)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Wheat</td>
+                <td>1200</td>
+                <td>3000</td>
+              </tr>
+              <tr>
+                <td>Tomatoes</td>
+                <td>400</td>
+                <td>480</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+<!-- Category-wise Sale Section -->
+<section class="category-wise-sale">
+    <h2>Category-wise Sales</h2>
+    <div class="table-container">
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Total Quantity Sold (kg)</th>
+            <th>Total Revenue ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Grains</td>
+            <td>1500</td>
+            <td>3750</td>
+          </tr>
+          <tr>
+            <td>Vegetables</td>
+            <td>500</td>
+            <td>600</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  
+    
+<!-- Sales Trends Section -->
+<section class="sales-trends">
+    <h2>Sales Trends</h2>
+    <div class="table-container">
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Highest Sales Day</td>
+            <td>2024-11-25 ($5,000)</td>
+          </tr>
+          <tr>
+            <td>Lowest Sales Day</td>
+            <td>2024-12-01 ($800)</td>
+          </tr>
+          <tr>
+            <td>Average Daily Sales</td>
+            <td>$1,666.67</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+    
+ <!-- Top Selling Products Section -->
+<section class="top-products">
+    <h2>Top Selling Products</h2>
+    <div class="table-container">
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Total Revenue ($)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Tomatoes</td>
+            <td>$5,000</td>
+          </tr>
+          <tr>
+            <td>Rice</td>
+            <td>$4,500</td>
+          </tr>
+          <tr>
+            <td>Milk</td>
+            <td>$4,000</td>
+          </tr>
+          <tr>
+            <td>Apples</td>
+            <td>$3,800</td>
+          </tr>
+          <tr>
+            <td>Potatoes</td>
+            <td>$3,500</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+    
+ <!-- Regional Sales Section -->
+<section class="regional-sales">
+    <h2>Regional Sales Performance</h2>
+    <div class="table-container">
+      <table class="product-table">
+        <thead>
+          <tr>
+            <th>Region</th>
+            <th>Total Sales ($)</th>
+            <th>Percentage of Total Sales</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>North</td>
+            <td>$20,000</td>
+            <td>40%</td>
+          </tr>
+          <tr>
+            <td>South</td>
+            <td>$15,000</td>
+            <td>30%</td>
+          </tr>
+          <tr>
+            <td>East</td>
+            <td>$10,000</td>
+            <td>20%</td>
+          </tr>
+          <tr>
+            <td>West</td>
+            <td>$5,000</td>
+            <td>10%</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th colspan="2">Total</th>
+            <th>100%</th>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+    
+        <!-- Notes and Observations -->
+        <div class="sales-notes">
+           <h2>Notes & Observations</h2>
+           <p>Sales have shown a steady increase over the last month, with vegetables and fruits contributing the most to overall revenue. Regional sales analysis suggests stronger performance in the northern region.</p>
+        </div>
+    </main>
+    

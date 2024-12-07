@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <div class="container">
+      <aside>
+      
+         <div class="top">
+           <div class="logo">
+            <img src="./Image/logo.png" >
+
+            
+           </div>
+           <div class="close" id="close_btn">
+            <span class="material-symbols-sharp">
+              close
+              </span>
+           </div>
+         </div>
+         <!-- end top -->
+         <div class="sidebar">
+            <a href="products.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Products Quantity</h3>
+           </a>
+           <a href="sales.html">
+              <span class="material-symbols-sharp">person_outline</span>
+              <h3>Recent Sales</h3>
+           </a>
+           <a href="add-products.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Add Products</h3>
+           </a>
+           <a href="receipt.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Receipt</h3>
+           </a>
+           <a href="total-sales.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Total Sales</h3>
+           </a>
+           <a href="feedback.html">
+              <span class="material-symbols-sharp">report_gmailerrorred</span>
+              <h3>Consumer Feedback</h3>
+           </a>
+           <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+           </a>
+         </div>
+
+      </aside>
+
+
+      <main>
+        <h1>Receipt</h1>
+    
+      <!-- Purchase Summary Section -->
+      <section class="purchase-summary">
+        <h2>Purchase Summary</h2>
+        <div class="table-container">
+          <table class="product-table">
+            <thead>
+              <tr>
+                <th>Supplier</th>
+                <th>Product Name</th>
+                <th>Quantity (kg)</th>
+                <th>Price per kg ($)</th>
+                <th>Total Cost ($)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John Farms</td>
+                <td>Wheat</td>
+                <td>500</td>
+                <td>2.50</td>
+                <td>1250</td>
+              </tr>
+              <tr>
+                <td>Green Valley</td>
+                <td>Tomatoes</td>
+                <td>300</td>
+                <td>1.20</td>
+                <td>360</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+    
+        <!-- Payment Details -->
+        <div class="payment-details">
+           <h2>Payment Information</h2>
+           <p><strong>Payment Method:</strong> Credit Card</p>
+           <p><strong>Transaction ID:</strong> 12345ABCDE</p>
+           <p><strong>Date of Purchase:</strong> 2024-12-03</p>
+        </div>
+    
+        <!-- Buyer Details -->
+        <div class="buyer-details">
+           <h2>Buyer Information</h2>
+           <p><strong>Name:</strong> John Doe</p>
+           <p><strong>Contact:</strong> +1 234 567 890</p>
+           <p><strong>Address:</strong> 123 Green Valley, Springfield</p>
+        </div>
+    
+        <!-- Receipt Notes -->
+        <div class="receipt-notes">
+           <h2>Additional Notes</h2>
+           <p>Thank you for shopping with us! Please keep this receipt for your records.</p>
+           <p>For any issues with the purchase, contact us at support@agrostore.com.</p>
+        </div>
+    </main>
+    
