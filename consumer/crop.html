@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+             <img src="./images/logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+             <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="index.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="price.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Price</h3>
+            </a>
+            <a href="consumer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Feedback</h3>
+              <span class="msg_count">14</span>
+            </a>
+            <a href="retatiler_address.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Retailer Address</h3>
+            </a>
+            <a href="recent_purchase.html">
+              <span class="material-symbols-sharp">shopping_cart</span>
+              <h3>Recent Purchase</h3>
+            </a>
+            <a href="settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+            </a>
+         </div>
+      </aside>
+<!-- Main --> 
+ 
+<main>
+  <div class="left-image">
+    <img src="./images/crop.png" alt="crop" style="display: block; margin: 2rem auto; width: 1100px; height: 420px;">
+  </div>
+
+  <div class="products-container">
+    <!-- Product Cards (Dynamic) -->
+    <div class="product-card">
+      <img src="./images/rice.png" alt="Rice">
+      <h3>Rice (চাল) Seasonal Pack 1 KG</h3>
+      <p class="rating">4.5 ⭐ (6)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/lentil.png" alt="Lentil">
+      <h3> Lentil(ডাল) 1 KG</h3>
+      <p class="rating">5.0 ⭐ (2)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/wheat.png" alt="Wheat">
+      <h3> Wheat(গম) 1KG</h3>
+      <p class="rating">4.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/coffee.png" alt="Coffee">
+      <h3> Coffee (কফি) 1KG</h3>
+      <p class="rating">5.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/maize.png" alt="Maize">
+      <h3> Maize (ভুট্টা) 1KG</h3>
+      <p class="rating">5.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/soya beans.png" alt="Soya Beans">
+      <h3> Soya Beans (সয়া বিনস) 1KG</h3>
+      <p class="rating">4.5 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/sugarcane.png" alt="Sugarcane">
+      <h3> Sugarcane (আখ) 1KG</h3>
+      <p class="rating">4.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/nuts.png" alt="Nuts">
+      <h3> Nuts (বাদাম ) 1KG</h3>
+      <p class="rating">4.8 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+  </div>
+  <!-- Add more product cards as needed -->
+</main>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

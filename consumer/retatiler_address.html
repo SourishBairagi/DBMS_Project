@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+             <img src="./images/logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+             <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="index.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="price.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Price</h3>
+            </a>
+            <a href="consumer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Feedback</h3>
+              <span class="msg_count">14</span>
+            </a>
+            <a href="retailer_address.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Retailer Address</h3>
+            </a>
+            <a href="recent_purchase.html">
+              <span class="material-symbols-sharp">shopping_cart</span>
+              <h3>Recent Purchase</h3>
+            </a>
+            <a href="settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+            </a>
+         </div>
+      </aside>
+ <!-- Main -->
+    <main>
+      <h1>Retailers Address and Contact</h1>
+      <div class="retailers" id="retailers-list">
+        <div class="retailer-card" data-name="Chand Mia">
+          <h2>Retailer Name 1</h2>
+          <p><strong>Address:</strong> 83 Main Street, City, State, 1214</p>
+          <p><strong>Phone:</strong> (123) 456-7890</p>
+          <p><strong>Email:</strong> retailer1@example.com</p>
+        </div>
+        <div class="retailer-card" data-name="Tushar Ali">
+          <h2>Retailer Name 2</h2>
+          <p><strong>Address:</strong> 456 Elm Street, City, State, 1216</p>
+          <p><strong>Phone:</strong> (987) 654-3210</p>
+          <p><strong>Email:</strong> retailer2@example.com</p>
+        </div>
+        <div class="retailer-card" data-name="Oli Mia">
+          <h2>Retailer Name 3</h2>
+          <p><strong>Address:</strong> 789 Pine Avenue, City, State, 1218</p>
+          <p><strong>Phone:</strong> (555) 123-4567</p>
+          <p><strong>Email:</strong> retailer3@example.com</p>
+        </div>
+      </div>
+
+      <div id="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.087021962176!2d90.42496857533794!3d23.815504378626006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64be6744a57%3A0xeacead51ebe2bf60!2sIndependent%20University%2C%20Bangladesh!5e0!3m2!1sen!2sbd!4v1732905652502!5m2!1sen!2sbd" 
+          width="600" 
+          height="500" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </main>
+    <div class="ask-anything">
+      <h2>Ask Anything</h2>
+      <form id="ask-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+        
+        <label for="query">Query:</label>
+        <textarea id="query" name="query" placeholder="Your Question..." required></textarea>
+        
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

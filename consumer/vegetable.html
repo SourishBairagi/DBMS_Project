@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+             <img src="./images/logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+             <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="index.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="price.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Price</h3>
+            </a>
+            <a href="consumer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Feedback</h3>
+              <span class="msg_count">14</span>
+            </a>
+            <a href="retatiler_address.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Retailer Address</h3>
+            </a>
+            <a href="recent_purchase.html">
+              <span class="material-symbols-sharp">shopping_cart</span>
+              <h3>Recent Purchase</h3>
+            </a>
+            <a href="settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+            </a>
+         </div>
+      </aside>
+<!-- Main --> 
+ 
+<main>
+  
+  <div class="left-image">
+    <img src="./images/veg.png" alt="Vegetables" style="display: block; margin: 2rem auto; width: 1000px; height: 400px;">
+  </div>
+
+  <div class="products-container">
+    <!-- Product Cards (Dynamic) -->
+    <div class="product-card">
+      <img src="./images/potato.png" alt="Potato">
+      <h3>Potato (আলু) Seasonal Pack 1 KG</h3>
+      <p class="rating">4.0 ⭐ (6)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/papaya.png" alt="Green Papaya">
+      <h3>Vegetable Green Papaya (পেঁপে) 1 KG</h3>
+      <p class="rating">5.0 ⭐ (2)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/tomato.png" alt="Tomato">
+      <h3>Vegetable Tomato Imported (টমেটো) 1KG</h3>
+      <p class="rating">4.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/cucumber.png" alt="Cucumber">
+      <h3>Vegetable Cucumber (শসা) 1KG</h3>
+      <p class="rating">5.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/onion.png" alt="Onion">
+      <h3>Vegetable Onion (পেঁয়াজ) 1KG</h3>
+      <p class="rating">5.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/chili.png" alt="Chili">
+      <h3>Vegetable Chili (মরিচ) 1KG</h3>
+      <p class="rating">4.5 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/carrot.png" alt="Carrot">
+      <h3>Vegetable Carrot (গাজর) 1KG</h3>
+      <p class="rating">4.0 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+    <div class="product-card">
+      <img src="./images/bitter gourd.png" alt="Bitter Gourd">
+      <h3>Vegetable Bitter Gourd (করলা ) 1KG</h3>
+      <p class="rating">4.8 ⭐ (1)</p>
+      <p class="price">
+        <a href="price.html" class="price-link">Price</a>
+      </p>
+    </div>
+  </div>
+  <!-- Add more product cards as needed -->
+</main>
+<div class="right">
+  <div class="top">
+      <button id="menu_bar">
+          <span class="material-symbols-sharp">menu</span>
+      </button>
+      <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+      </div>
+      <div class="profile">
+          <div class="info">
+              <p><b>Sumaiya</b></p>
+              <p>Consumer</p>
+          </div>
+      </div>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>

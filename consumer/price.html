@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+             <img src="./images/logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+             <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="index.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="price.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Price</h3>
+            </a>
+            <a href="consumer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Feedback</h3>
+              <span class="msg_count">14</span>
+            </a>
+            <a href="retatiler_address.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Retailer Address</h3>
+            </a>
+            <a href="recent_purchase.html">
+              <span class="material-symbols-sharp">shopping_cart</span>
+              <h3>Recent Purchase</h3>
+            </a>
+            <a href="settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+            </a>
+         </div>
+      </aside>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+      <h1>Welcome to our page!!!</h1>
+      <header class="header">
+        <h2>Product Pricing</h2>
+      </header>
+      <section class="content">
+        <div class="product-pricing">
+          <table>
+            <thead>
+              <tr>
+                <th>Product Image</th>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><img src="./images/rice.png" alt="Product 1" class="product-img"></td>
+                <td>Rice</td>
+                <td>Fresh and high quality</td>
+                <td>&#2547;120</td>
+                <td class="success">In Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/lentil.png" alt="Product 2" class="product-img"></td>
+                <td>lentil</td>
+                <td>Pure and best selling</td>
+                <td>&#2547;80</td>
+                <td class="success">In Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/tomato.png" alt="Product 3" class="product-img"></td>
+                <td>Tomato</td>
+                <td>Fresh, ripe, and organic</td>
+                <td>&#2547;90</td>
+                <td class="warning">Limited Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/cucumber.png" alt="Product 4" class="product-img"></td>
+                <td>Cucumber</td>
+                <td>Fresh and ready to cook</td>
+                <td>&#2547;100</td>
+                <td class="warning">Limited Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/maize.png" alt="Product 5" class="product-img"></td>
+                <td><Maize</Main></td>
+                <td>Rich flavor, premium quality</td>
+                <td>&#2547;80</td>
+                <td class="warning">Limited Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/mango.png" alt="Product 6" class="product-img"></td>
+                <td>Mango</td>
+                <td>High-quality and fresh fruit</td>
+                <td>&#2547;150</td>
+                <td class="danger">Out of Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/potato.png" alt="Product 7" class="product-img"></td>
+                <td>Potato</td>
+                <td>Fresh and versatile ingredient</td>
+                <td>&#2547;60</td>
+                <td class="success">In Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/watermelon.png" alt="Product 8" class="product-img"></td>
+                <td>Watermelon</td>
+                <td>Rich, fresh, and nutritious</td>
+                <td>&#2547;50</td>
+                <td class="success">In Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/onion.png" alt="Product 9" class="product-img"></td>
+                <td>Onion</td>
+                <td>Premium quality</td>
+                <td>&#2547;200</td>
+                <td class="warning">Limited Stock</td>
+              </tr>
+              <tr>
+                <td><img src="./images/orange.png" alt="Product 10" class="product-img"></td>
+                <td>Orange</td>
+                <td>Fresh and best quality</td>
+                <td>&#2547;40</td>
+                <td class="success">In Stock</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    
+
+    <div class="right">
+      <div class="top">
+        <button id="menu_bar">
+          <span class="material-symbols-sharp">menu</span>
+        </button>
+        <div class="theme-toggler">
+          <span class="material-symbols-sharp active">light_mode</span>
+          <span class="material-symbols-sharp">dark_mode</span>
+        </div>
+        <div class="profile">
+          <div class="info">
+            <p><b>Sumaiya</b></p>
+            <p>Consumer</p>
+            <small class="text-muted"></small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
