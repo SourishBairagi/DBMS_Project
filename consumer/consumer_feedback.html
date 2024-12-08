@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UI/UX</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js -->
+</head>
+<body>
+   <div class="container">
+      <!-- Sidebar -->
+      <aside>
+         <div class="top">
+           <div class="logo">
+             <img src="./images/logo.png" alt="Logo">
+           </div>
+           <div class="close" id="close_btn">
+             <span class="material-symbols-sharp">close</span>
+           </div>
+         </div>
+         <div class="sidebar">
+            <a href="index.html">
+              <span class="material-symbols-sharp">grid_view</span>
+              <h3>Dashboard</h3>
+            </a>
+            <a href="price.html">
+              <span class="material-symbols-sharp">insights</span>
+              <h3>Market Price</h3>
+            </a>
+            <a href="consumer_feedback.html">
+              <span class="material-symbols-sharp">mail_outline</span>
+              <h3>Feedback</h3>
+              <span class="msg_count">14</span>
+            </a>
+            <a href="retatiler_address.html">
+              <span class="material-symbols-sharp">receipt_long</span>
+              <h3>Retailer Address</h3>
+            </a>
+            <a href="recent_purchase.html">
+              <span class="material-symbols-sharp">shopping_cart</span>
+              <h3>Recent Purchase</h3>
+            </a>
+            <a href="settings.html">
+              <span class="material-symbols-sharp">settings</span>
+              <h3>Settings</h3>
+            </a>
+            <a href="#">
+              <span class="material-symbols-sharp">logout</span>
+              <h3>Logout</h3>
+            </a>
+         </div>
+      </aside>
+
+        <!-- Main Content -->
+        <main>
+          <div class="feedback-container">
+            <h1>Website Feedback Form</h1>
+            <h2>WEBSITE FEEDBACK FORM</h2>
+            <p>Please fill out this brief feedback form so we can ensure a top-quality experience for all of our visitors.</p>
+            <form>
+              <!-- Email and Name -->
+              <div class="row">
+                <div>
+                  <label for="email">Email <small>(optional)</small></label>
+                  <input type="text" id="email" name="email">
+                </div>
+                <div>
+                  <label for="name">Name <small>(optional)</small></label>
+                  <input type="text" id="name" name="name">
+                </div>
+              </div>
+          
+              <!-- First Visit and Needs Met -->
+              <div class="row">
+                <div>
+                  <label>Is this your first visit to the website?</label>
+                  <div class="checkbox-group">
+                    <label>
+                      <input type="radio" name="first_visit" value="yes"> Yes
+                    </label>
+                    <label>
+                      <input type="radio" name="first_visit" value="no"> No
+                    </label>
+                  </div>
+                </div>
+                <div>
+                  <label>Were you able to find what you needed?</label>
+                  <div class="checkbox-group">
+                    <label>
+                      <input type="radio" name="needs_met" value="yes"> Yes
+                    </label>
+                    <label>
+                      <input type="radio" name="needs_met" value="no"> No
+                    </label>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Reasons -->
+              <label for="reason">Do you have any suggestion for us?</label>
+              <textarea id="reason" name="reason"></textarea>
+          
+              <label for="info">If you did not find what you needed, please tell us what info you were seeking?</label>
+              <textarea id="info" name="info"></textarea>
+          
+              <!-- Difficulty and Likelihood -->
+              <div class="row">
+                <div>
+                  <label>How easy is it to find information on the site?</label>
+                    <label>
+                      <textarea id="reason" name="reason"></textarea>
+                    </label>
+                </div>
+                <div>
+                </div>
+              </div>
+          
+              <!-- Additional Comments -->
+              <label for="comments">Please provide any additional comments or suggestions. <small>(optional)</small></label>
+              <textarea id="comments" name="comments"></textarea>
+          
+              <!-- Submit Button -->
+              <button type="submit">Submit Feedback</button>
+            </form>
+          </div>
+          
+          </form>
+        </main>        
+      </div>
+      <script src="script.js"></script>
+    </body>
+    </html>
+    
